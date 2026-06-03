@@ -1,6 +1,7 @@
 import { IonContent, IonModal, IonPage } from '@ionic/react';
 import Icon from '@mdi/react';
 import {
+  mdiCalendarBlankOutline,
   mdiChevronRight,
   mdiDownloadOutline,
   mdiPlay,
@@ -144,12 +145,15 @@ export function TreinosPage() {
             </div>
           ) : (
             <div className="tp-hero is-empty">
-              <div className="tp-hero__name">Sem Rotina Ativa</div>
+              <div className="tp-hero__empty-icon">
+                <Icon path={mdiCalendarBlankOutline} size={1.2} color="var(--neon-cyan)" />
+              </div>
+              <div className="tp-hero__name tp-hero__name--empty">MONTE SUA SEMANA</div>
               <div className="tp-hero__sub">
-                Crie uma rotina pra organizar sua semana.
+                Crie uma rotina e defina qual treino fazer em cada dia.
               </div>
               <button
-                className="tp-hero__cta is-primary"
+                className="tp-hero__cta is-cyan"
                 onClick={() => history.push('/nova-ficha')}>
                 <Icon path={mdiPlus} size={0.9} /> CRIAR ROTINA
               </button>

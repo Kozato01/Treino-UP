@@ -10,7 +10,6 @@ import {
   mdiFire,
   mdiHistory,
   mdiLeaf,
-  mdiLightningBolt,
   mdiPlay,
   mdiSleep,
   mdiTarget,
@@ -88,11 +87,26 @@ export function HomePage() {
         ? null
         : sessions.slice().sort((a, b) => b.startedAt - a.startedAt)[0];
     const activeGoals = goals.filter((g) => !g.achieved).slice(0, 3);
+
+    // streak: dias consecutivos com pelo menos 1 sessão até hoje
+    const sorted = sessions.slice().sort((a, b) => b.startedAt - a.startedAt);
+    let streak = 0;
+    const checked = new Date(today);
+    checked.setHours(0, 0, 0, 0);
+    for (let d = 0; d < 365; d++) {
+      const dayStart = new Date(checked); dayStart.setDate(checked.getDate() - d); dayStart.setHours(0,0,0,0);
+      const dayEnd = new Date(dayStart); dayEnd.setHours(23,59,59,999);
+      const hadSession = sorted.some(s => s.startedAt >= dayStart.getTime() && s.startedAt <= dayEnd.getTime() && s.endedAt != null);
+      if (hadSession) streak++;
+      else if (d > 0) break; // dia de hoje sem sessão ainda não quebra streak
+    }
+
     return {
       sessionsThisWeek: weekSessionIds.size,
       lastSession,
       activeGoals,
       totalVolumeThisWeek,
+      streak,
     };
   }, [workouts, sessions, sessionSets, goals]);
 
@@ -125,15 +139,11 @@ export function HomePage() {
           </div>
           <h1 className="home-hero__greeting">{greeting}</h1>
           <span className="home-hero__date">{formatDate(today).toUpperCase()}</span>
-          <button className="neon-cta home-hero__cta" onClick={() => history.push('/treinos')}>
-            <Icon path={mdiLightningBolt} size={0.8} />
-            COMEÇAR TREINO
-          </button>
         </div>
 
         <div className="home-stats">
           <StatBox
-            iconPath={mdiFire}
+            iconPath={mdiCalendarCheck}
             label="ESTA SEMANA"
             value={String(data.sessionsThisWeek)}
             suffix="sessões"
@@ -145,6 +155,13 @@ export function HomePage() {
             value={formatKg(data.totalVolumeThisWeek)}
             suffix="kg"
             accent="var(--neon-cyan)"
+          />
+          <StatBox
+            iconPath={mdiFire}
+            label="SEQUÊNCIA"
+            value={String(data.streak)}
+            suffix="dias"
+            accent="var(--neon-orange)"
           />
         </div>
 

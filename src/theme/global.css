@@ -141,6 +141,11 @@ ion-app {
   color: var(--neon-green);
 }
 
+/* Quando o banner de sessão ativa está visível, garante scroll além do banner */
+.has-active-banner ion-content::part(scroll) {
+  padding-bottom: calc(56px + env(safe-area-inset-bottom) + 56px) !important;
+}
+
 .active-timed-banner {
   position: fixed;
   left: 50%;
@@ -378,7 +383,8 @@ ion-app {
 }
 
 input.neon-input,
-textarea.neon-input {
+textarea.neon-input,
+select.neon-input {
   width: 100%;
   background: var(--bg-input);
   color: var(--text);
@@ -392,7 +398,8 @@ textarea.neon-input {
 }
 
 input.neon-input:focus,
-textarea.neon-input:focus {
+textarea.neon-input:focus,
+select.neon-input:focus {
   border-color: var(--neon-green);
 }
 

@@ -27,6 +27,9 @@ src.old/
 CLAUDE.md
 .cursor/
 .aider*
+DOCUMENTACAO_FUNCOES.md
+DOCUMENTACAO.md
+
 
 # IDE local
 .vscode/

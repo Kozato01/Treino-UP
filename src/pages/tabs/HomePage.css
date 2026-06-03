@@ -1,5 +1,5 @@
 .home-hero {
-  padding: 40px 20px 28px;
+  padding: 28px 20px 20px;
   background: linear-gradient(180deg, #1A2A08 0%, var(--bg-base) 100%);
   border-bottom: 1px solid var(--border);
 }
@@ -20,9 +20,9 @@
 
 .home-hero__greeting {
   color: var(--text);
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 900;
-  margin: 18px 0 0;
+  margin: 12px 0 0;
   letter-spacing: 0.5px;
 }
 
@@ -80,7 +80,8 @@
 
 .home-stat {
   flex: 1;
-  padding: 14px;
+  min-width: 0;
+  padding: 10px;
   background: var(--bg-surface);
   border-radius: 8px;
   border: 1px solid var(--border);
@@ -94,9 +95,9 @@
 
 .home-stat__label {
   color: var(--text-dim);
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .home-stat__body {
@@ -107,7 +108,7 @@
 }
 
 .home-stat__value {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 900;
   letter-spacing: 0.5px;
 }

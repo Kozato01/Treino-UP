@@ -41,6 +41,7 @@ import { NovaFichaPage } from './pages/workouts/NovaFichaPage';
 import { FichaDetailPage } from './pages/workouts/FichaDetailPage';
 import { TreinosCompartilhadosPage } from './pages/workouts/TreinosCompartilhadosPage';
 import { TreinosLivresPage } from './pages/workouts/TreinosLivresPage';
+import { WelcomeModal } from './components/WelcomeModal';
 import { SaudePage } from './pages/health/SaudePage';
 import { HealthDiagnostic } from './pages/health/HealthDiagnostic';
 import { DadosLocaisPage } from './pages/health/DadosLocaisPage';
@@ -89,8 +90,18 @@ function ActiveSessionBanner() {
   const history = useHistory();
   const sessionId = useSession((s) => s.sessionId);
   const workoutName = useSession((s) => s.workoutName);
-  if (sessionId == null) return null;
-  if (location.pathname === '/sessao-ativa') return null;
+  const visible = sessionId != null && location.pathname !== '/sessao-ativa';
+
+  useEffect(() => {
+    if (visible) {
+      document.body.classList.add('has-active-banner');
+    } else {
+      document.body.classList.remove('has-active-banner');
+    }
+    return () => document.body.classList.remove('has-active-banner');
+  }, [visible]);
+
+  if (!visible) return null;
   return (
     <button className="active-session-banner" onClick={() => history.push('/sessao-ativa')}>
       <Icon path={mdiPlayCircle} size={0.9} color="var(--neon-green)" />
@@ -219,6 +230,7 @@ function AppRouter() {
       </IonRouterOutlet>
       <ActiveSessionBanner />
       <BottomTabBar />
+      <WelcomeModal />
     </>
   );
 }

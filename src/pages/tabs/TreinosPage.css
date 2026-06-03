@@ -53,9 +53,23 @@
 }
 
 .tp-hero.is-empty {
-  background: var(--bg-surface);
-  border: 1px dashed var(--outline);
-  align-items: flex-start;
+  background: linear-gradient(135deg, rgba(74, 227, 255, 0.06), rgba(74, 227, 255, 0.02));
+  border: 1px solid rgba(74, 227, 255, 0.25);
+  align-items: center;
+  text-align: center;
+  padding: 14px 16px;
+  gap: 2px;
+}
+
+.tp-hero__empty-icon {
+  margin-bottom: 4px;
+  opacity: 0.85;
+}
+
+.tp-hero__name--empty {
+  font-size: 15px;
+  color: var(--neon-cyan);
+  letter-spacing: 1.5px;
 }
 
 .tp-hero__top {
@@ -127,6 +141,14 @@
   background: transparent;
   color: var(--neon-green);
   border: 1.5px solid var(--neon-green);
+}
+
+.tp-hero__cta.is-cyan {
+  background: var(--neon-cyan);
+  color: #0A0B0F;
+  box-shadow: 0 0 14px rgba(74, 227, 255, 0.35);
+  width: 100%;
+  margin-top: 8px;
 }
 
 .tp-hero__cta:disabled {
