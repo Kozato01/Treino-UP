@@ -1,0 +1,358 @@
+.dt-wrap {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.al-hero {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 14px;
+  background: var(--hero-gradient);
+  color: var(--cta-text);
+}
+.al-hero__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(10, 11, 15, 0.12);
+  flex-shrink: 0;
+}
+.al-hero__body {
+  display: flex;
+  flex-direction: column;
+}
+.al-hero__title {
+  font-size: 16px;
+  font-weight: 800;
+}
+.al-hero__sub {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.78;
+}
+
+.al-remind {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-dim);
+  text-align: left;
+  cursor: pointer;
+}
+.al-remind.is-on {
+  border-color: var(--neon-green);
+  color: var(--neon-green);
+  box-shadow: 0 0 16px rgba(198, 255, 74, 0.15);
+}
+.al-remind__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+.al-remind__title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text);
+}
+.al-remind.is-on .al-remind__title {
+  color: var(--neon-green);
+}
+.al-remind__sub {
+  font-size: 11px;
+  color: var(--text-mute);
+}
+.al-msg {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin: 0;
+  padding: 0 4px;
+}
+
+.al-meals {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.al-meal {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.al-meal.is-open {
+  border-color: var(--neon-cyan);
+}
+.al-meal__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+}
+.al-meal__emoji {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.al-meal__title {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2px;
+}
+.al-meal__name {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text);
+}
+.al-meal__time {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--neon-cyan);
+}
+.al-meal__chevron {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-mute);
+  width: 22px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.al-meal__body {
+  padding: 0 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.al-meal__note {
+  margin: 0;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--text-mute);
+  padding: 8px 10px;
+  background: var(--bg-surface-2);
+  border-radius: 10px;
+}
+
+.al-items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.al-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--bg-surface-2);
+  border-radius: 10px;
+}
+.al-item__main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.al-item__food {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+.al-item__group {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-mute);
+}
+.al-item__qty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.al-item__measure {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-align: right;
+}
+.al-item__grams {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--neon-green);
+  font-variant-numeric: tabular-nums;
+}
+
+.al-option {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.al-option__label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--neon-cyan);
+}
+.al-option__or {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text-mute);
+  letter-spacing: 2px;
+  padding: 2px 0;
+}
+
+.al-foot {
+  font-size: 11px;
+  color: var(--text-mute);
+  text-align: center;
+  margin: 4px 0 0;
+}
+
+/* ─── Delete button on card ─── */
+.al-meal__head-row {
+  display: flex;
+  align-items: stretch;
+}
+.al-meal__head {
+  flex: 1;
+}
+.al-meal__delete {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  background: transparent;
+  border: 0;
+  border-left: 1px solid var(--border);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+.al-meal__delete:active {
+  opacity: 1;
+}
+
+/* ─── Add button in toolbar ─── */
+.al-add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+/* ─── Empty state ─── */
+.al-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+  color: var(--text-mute);
+  font-size: 13px;
+}
+
+/* ─── Add meal form ─── */
+.al-form {
+  background: var(--bg-base);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  overflow-y: auto;
+}
+.al-form__title {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+}
+.al-form__emojis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.al-form__emoji-btn {
+  font-size: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  background: var(--bg-surface);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s;
+}
+.al-form__emoji-btn.is-active {
+  border-color: var(--neon-green);
+  background: rgba(198, 255, 74, 0.1);
+}
+.al-form__items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+.al-form__item-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.al-form__remove-item {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-surface-2);
+  color: var(--text-mute);
+  font-size: 18px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.al-form__add-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px dashed var(--outline);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--neon-green);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+.al-form__actions {
+  display: flex;
+  gap: 10px;
+  padding-top: 4px;
+}

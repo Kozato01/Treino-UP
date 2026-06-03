@@ -1,0 +1,57 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+.vite/
+*.tsbuildinfo
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env
+.env*.local
+
+# preserved expo source (to delete after migration complete)
+src.old/
+
+# AI assistant tooling (local, não compartilhar)
+.claude/
+CLAUDE.md
+.cursor/
+.aider*
+
+# IDE local
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Capacitor native — ignorar apenas build outputs e arquivos sensíveis,
+# mantendo o código fonte (build.gradle, AndroidManifest, ícones, etc) versionado.
+android/.gradle/
+android/build/
+android/app/build/
+android/app/release/
+android/local.properties
+android/captures/
+android/.idea/
+android/.kotlin/
+android/.cxx/
+android/app/*.keystore
+android/app/*.jks
+ios/Pods/
+ios/build/
+ios/DerivedData/
+ios/.xcode.env.local
+ios/App/Pods/
+ios/App/build/

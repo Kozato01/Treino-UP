@@ -1,0 +1,166 @@
+.tc-wrap {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+/* ─── Hero ─── */
+.tc-hero {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.tc-hero__icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(255, 59, 59, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tc-hero__body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.tc-hero__title {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.tc-hero__sub {
+  color: var(--text-mute);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* ─── Import CTA ─── */
+.tc-import {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1.5px dashed var(--neon-red);
+  background: rgba(255, 59, 59, 0.05);
+  color: var(--neon-red);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* ─── Section ─── */
+.tc-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tc-section__label {
+  color: var(--text-mute);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0 2px;
+}
+
+/* ─── Cards ─── */
+.tc-card {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: border-color 0.15s;
+}
+
+.tc-card:active {
+  border-color: var(--neon-red);
+}
+
+.tc-card__bar {
+  width: 4px;
+  align-self: stretch;
+  background: var(--neon-red);
+  flex-shrink: 0;
+}
+
+.tc-card__body {
+  flex: 1;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.tc-card__title {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tc-card__desc {
+  color: var(--text-dim);
+  font-size: 12px;
+}
+
+.tc-card__tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.tc-card__chevron {
+  padding: 0 12px;
+  flex-shrink: 0;
+}
+
+/* ─── Empty state ─── */
+.tc-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 48px 16px;
+  text-align: center;
+}
+
+.tc-empty__title {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tc-empty__sub {
+  color: var(--text-mute);
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.5;
+}

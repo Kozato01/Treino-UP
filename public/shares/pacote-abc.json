@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "type": "workout-pack-share",
+  "pack": {
+    "name": "Pacote ABC — Ac-N-Version1",
+    "description": "6 treinos: Perna A-1/A-2, Costas|Ombro|Bíceps A-1/A-2, Peito|Tríceps A-1/A-2. Foco em máquinas e cabos.",
+    "assignments": {}
+  },
+  "workouts": [
+    {
+      "workout": {
+        "name": "Perna A-1",
+        "description": "Foco em quadríceps e adutores/abdutores. Leg press, extensora e panturrilha.",
+        "color": "#8E24AA",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",    "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leg_Press",            "orderIndex": 1, "targetSets": 4, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leg_Extensions",       "orderIndex": 2, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Thigh_Adductor",       "orderIndex": 3, "targetSets": 3, "targetReps": 15, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Thigh_Abductor",       "orderIndex": 4, "targetSets": 3, "targetReps": 15, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Seated_Calf_Raise",    "orderIndex": 5, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Seated_Leg_Curl",      "orderIndex": 6, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Perna A-2",
+        "description": "Foco em posteriores e glúteos. Flexora, agachamento smith e panturrilha.",
+        "color": "#6A1B9A",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",    "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Smith_Machine_Squat",  "orderIndex": 1, "targetSets": 4, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Lying_Leg_Curls",      "orderIndex": 2, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Seated_Leg_Curl",      "orderIndex": 3, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Thigh_Adductor",       "orderIndex": 4, "targetSets": 3, "targetReps": 15, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Thigh_Abductor",       "orderIndex": 5, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Seated_Calf_Raise",    "orderIndex": 6, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Costas | Ombro | Bíceps A-1",
+        "description": "Pulldowns, desenvolvimento e elevações. Foco em largura e ombros.",
+        "color": "#1E88E5",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",            "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Wide-Grip_Lat_Pulldown",        "orderIndex": 1, "targetSets": 4, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Underhand_Cable_Pulldowns",     "orderIndex": 2, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leverage_Shoulder_Press",       "orderIndex": 3, "targetSets": 4, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leverage_High_Row",             "orderIndex": 4, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Side_Lateral_Raise",            "orderIndex": 5, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Front_Dumbbell_Raise",          "orderIndex": 6, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Dumbbell_Alternate_Bicep_Curl", "orderIndex": 7, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Costas | Ombro | Bíceps A-2",
+        "description": "Remadas e roscas. Foco em espessura de costas e bíceps.",
+        "color": "#0D47A1",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",              "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Smith_Machine_Bent_Over_Row",    "orderIndex": 1, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Seated_Cable_Rows",              "orderIndex": 2, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Leverage_Iso_Row",               "orderIndex": 3, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Leverage_Shoulder_Press",        "orderIndex": 4, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Dumbbell_Alternate_Bicep_Curl",  "orderIndex": 5, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Standing_Biceps_Cable_Curl",     "orderIndex": 6, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Peito | Tríceps A-1",
+        "description": "Supino plano e inclinado em máquina + tríceps no cabo. Foco em volume.",
+        "color": "#E53935",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",                   "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leverage_Chest_Press",                "orderIndex": 1, "targetSets": 4, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leverage_Incline_Chest_Press",        "orderIndex": 2, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Triceps_Pushdown_-_Rope_Attachment",  "orderIndex": 3, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Triceps_Pushdown_-_V-Bar_Attachment", "orderIndex": 4, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Reverse_Grip_Triceps_Pushdown",       "orderIndex": 5, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Triceps_Pushdown",                    "orderIndex": 6, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Peito | Tríceps A-2",
+        "description": "Supino declinado + tríceps. Foco em definição e finalização.",
+        "color": "#B71C1C",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",                      "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leverage_Decline_Chest_Press",           "orderIndex": 1, "targetSets": 4, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Triceps_Pushdown",                       "orderIndex": 2, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Cable_Rope_Overhead_Triceps_Extension",  "orderIndex": 3, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" }
+      ]
+    }
+  ]
+}

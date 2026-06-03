@@ -1,0 +1,117 @@
+.lrp {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lrp-map {
+  position: relative;
+  height: 240px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+}
+.lrp-map .leaflet-tile {
+  filter: brightness(0.72) contrast(1.05) saturate(0.85);
+}
+.lrp-map .leaflet-container {
+  background: var(--bg-surface);
+}
+
+.lrp-gps {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(10, 11, 15, 0.78);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  backdrop-filter: blur(8px);
+}
+.lrp-gps em {
+  font-style: normal;
+  opacity: 0.7;
+  font-size: 11px;
+}
+.lrp-gps.lrp-good {
+  color: var(--neon-green);
+  border-color: var(--neon-green);
+}
+.lrp-gps.lrp-weak {
+  color: var(--neon-orange);
+  border-color: var(--neon-orange);
+}
+.lrp-gps.lrp-searching {
+  color: var(--neon-yellow);
+  animation: lrp-pulse 1.2s ease-in-out infinite;
+}
+@keyframes lrp-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+.lrp-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.lrp-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 4px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+.lrp-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.lrp-label {
+  font-size: 10px;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.lrp-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.lrp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  border-radius: 14px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+.lrp-btn.start {
+  background: var(--neon-green);
+  color: var(--cta-text);
+}
+.lrp-btn.pause {
+  background: var(--bg-surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.lrp-btn.stop {
+  background: var(--neon-pink);
+  color: var(--cta-text);
+}

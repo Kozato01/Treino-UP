@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "type": "workout-pack-share",
+  "pack": {
+    "name": "Pacote Completo — Ac-N-Version1",
+    "description": "7 treinos pré-definidos: Perna, Costas/Ombro/Bíceps, Peito/Tríceps, Full Body e PPL (Push/Pull/Legs). Configure os dias conforme sua rotina.",
+    "assignments": {}
+  },
+  "workouts": [
+    {
+      "workout": {
+        "name": "Treino Perna",
+        "description": "Treino de perna completo com aquecimento, compostos e isolados.",
+        "color": "#8E24AA",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",        "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Front_Squat_Clean_Grip",    "orderIndex": 1, "targetSets": 4, "targetReps": 8,  "targetWeightKg": null, "restSeconds": 180, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leg_Press",                 "orderIndex": 2, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leg_Extensions",            "orderIndex": 3, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "90_90_Hamstring",           "orderIndex": 4, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Adductor",                  "orderIndex": 5, "targetSets": 3, "targetReps": 15, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Thigh_Abductor",            "orderIndex": 6, "targetSets": 3, "targetReps": 15, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Barbell_Seated_Calf_Raise", "orderIndex": 7, "targetSets": 3, "targetReps": 15, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Treino Costas | Ombro | Bíceps",
+        "description": "Treino completo com foco em costas, ombros e bíceps.",
+        "color": "#1E88E5",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",                  "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Close-Grip_Front_Lat_Pulldown",      "orderIndex": 1, "targetSets": 4, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Underhand_Cable_Pulldowns",          "orderIndex": 2, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Alternating_Kettlebell_Row",         "orderIndex": 3, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Alternating_Cable_Shoulder_Press",   "orderIndex": 4, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Lateral_Raise_-_With_Bands",         "orderIndex": 5, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Alternate_Hammer_Curl",              "orderIndex": 6, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Treino Peito | Tríceps",
+        "description": "Treino de peito e tríceps com múltiplos ângulos.",
+        "color": "#E53935",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",                        "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Cable_Chest_Press",                        "orderIndex": 1, "targetSets": 4, "targetReps": 8,  "targetWeightKg": null, "restSeconds": 150, "notes": null, "technique": "normal" },
+        { "exerciseId": "Barbell_Bench_Press_-_Medium_Grip",        "orderIndex": 2, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Back_Flyes_-_With_Bands",                  "orderIndex": 3, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Band_Skull_Crusher",                       "orderIndex": 4, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Triceps_Pushdown_-_Rope_Attachment",       "orderIndex": 5, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Full Body — Iniciante com Máquinas",
+        "description": "Treino de corpo inteiro para iniciantes. Usa apenas máquinas. 3x por semana.",
+        "color": "#4CAF50",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",                  "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leg_Press",                          "orderIndex": 1, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leg_Extensions",                     "orderIndex": 2, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Cable_Chest_Press",                  "orderIndex": 3, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Close-Grip_Front_Lat_Pulldown",      "orderIndex": 4, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Alternating_Cable_Shoulder_Press",   "orderIndex": 5, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Band_Skull_Crusher",                 "orderIndex": 6, "targetSets": 2, "targetReps": 12, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Push — Peito, Ombros, Tríceps (Máquinas)",
+        "description": "Empurrar: Peito, Ombros e Tríceps. Iniciante com máquinas.",
+        "color": "#E53935",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",                  "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Cable_Chest_Press",                  "orderIndex": 1, "targetSets": 4, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Barbell_Bench_Press_-_Medium_Grip",  "orderIndex": 2, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Back_Flyes_-_With_Bands",            "orderIndex": 3, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Alternating_Cable_Shoulder_Press",   "orderIndex": 4, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Lateral_Raise_-_With_Bands",         "orderIndex": 5, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Band_Skull_Crusher",                 "orderIndex": 6, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Triceps_Pushdown_-_Rope_Attachment", "orderIndex": 7, "targetSets": 2, "targetReps": 12, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Pull — Costas e Bíceps (Máquinas)",
+        "description": "Puxar: Costas e Bíceps. Iniciante com máquinas.",
+        "color": "#1E88E5",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",              "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Close-Grip_Front_Lat_Pulldown",  "orderIndex": 1, "targetSets": 4, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Underhand_Cable_Pulldowns",      "orderIndex": 2, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Alternating_Kettlebell_Row",     "orderIndex": 3, "targetSets": 3, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Kneeling_High_Pulley_Row",       "orderIndex": 4, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Alternate_Hammer_Curl",          "orderIndex": 5, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" }
+      ]
+    },
+    {
+      "workout": {
+        "name": "Legs — Perna Completa (Máquinas)",
+        "description": "Pernas: Quadríceps, Posteriores, Glúteos e Adutores/Abdutores. Iniciante com máquinas.",
+        "color": "#8E24AA",
+        "createdAt": 1745000000000,
+        "isImported": true
+      },
+      "exercises": [
+        { "exerciseId": "Jogging_Treadmill",      "orderIndex": 0, "targetSets": 1, "targetReps": 10, "targetWeightKg": null, "restSeconds": 300, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leg_Press",              "orderIndex": 1, "targetSets": 4, "targetReps": 10, "targetWeightKg": null, "restSeconds": 120, "notes": null, "technique": "normal" },
+        { "exerciseId": "Leg_Extensions",         "orderIndex": 2, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "90_90_Hamstring",        "orderIndex": 3, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Barbell_Hip_Thrust",     "orderIndex": 4, "targetSets": 3, "targetReps": 12, "targetWeightKg": null, "restSeconds": 90,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Thigh_Abductor",         "orderIndex": 5, "targetSets": 3, "targetReps": 15, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Adductor",               "orderIndex": 6, "targetSets": 3, "targetReps": 15, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" },
+        { "exerciseId": "Calf_Press",             "orderIndex": 7, "targetSets": 3, "targetReps": 15, "targetWeightKg": null, "restSeconds": 60,  "notes": null, "technique": "normal" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+.cq-wrap {
+  padding: 20px 16px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cq-summary {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cq-summary__count {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.cq-summary__sep {
+  color: var(--text-mute);
+  font-size: 20px;
+}
+
+.cq-summary__label {
+  color: var(--text-mute);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  width: 100%;
+  margin-top: -8px;
+}
+
+.cq-progress-bar {
+  height: 4px;
+  background: var(--bg-surface-2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.cq-progress-bar__fill {
+  height: 100%;
+  background: var(--neon-green);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.cq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cq-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  opacity: 0.5;
+}
+
+.cq-card.is-unlocked {
+  opacity: 1;
+  border-color: var(--neon-green);
+  background: rgba(198, 255, 74, 0.05);
+}
+
+.cq-card__icon {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 4px;
+}
+
+.cq-card__icon--locked {
+  filter: grayscale(1);
+  opacity: 0.4;
+}
+
+.cq-card__lock {
+  position: absolute;
+  bottom: -2px;
+  right: -4px;
+  font-size: 14px;
+}
+
+.cq-card__title {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.cq-card.is-unlocked .cq-card__title {
+  color: var(--neon-green);
+}
+
+.cq-card__desc {
+  color: var(--text-mute);
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.cq-card__prog-bar {
+  height: 3px;
+  background: var(--bg-surface-2);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.cq-card__prog-fill {
+  height: 100%;
+  background: var(--neon-cyan);
+  border-radius: 2px;
+}
+
+.cq-card__pct {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-mute);
+  letter-spacing: 0.5px;
+}
+
+.cq-card.is-unlocked .cq-card__pct {
+  color: var(--neon-green);
+}
