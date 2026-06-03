@@ -1,6 +1,8 @@
 import { IonBackButton, IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { Clipboard } from '@capacitor/clipboard';
 import Icon from '@mdi/react';
-import { mdiDumbbell, mdiGithub, mdiHeart, mdiDiceMultiple } from '@mdi/js';
+import { mdiDumbbell, mdiGithub, mdiHeart, mdiDiceMultiple, mdiContentCopy, mdiCheck, mdiQrcode, mdiEyeOutline, mdiEyeOffOutline } from '@mdi/js';
+import { useState } from 'react';
 import { useSettings } from '../../stores/settings';
 import { THEMES, THEME_LABELS, generateRandomTheme, type ThemeId } from '../../theme/themes';
 import {
@@ -13,12 +15,21 @@ import {
 import './SobrePage.css';
 
 const THEME_IDS: ThemeId[] = ['neon', 'academia', 'forge', 'oceano'];
+const PIX_KEY = '7d84f680-3eed-4437-b4ea-ea60e2a239a8';
 
 export function SobrePage() {
+  const [copied, setCopied] = useState(false);
+  const [pixVisible, setPixVisible] = useState(false);
   const theme = useSettings((s) => s.theme);
   const customTheme = useSettings((s) => s.customTheme);
   const setTheme = useSettings((s) => s.setTheme);
   const setCustomTheme = useSettings((s) => s.setCustomTheme);
+
+  const handleCopyPix = async () => {
+    await Clipboard.write({ string: PIX_KEY });
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const handleRandom = () => {
     setCustomTheme(generateRandomTheme());
@@ -119,6 +130,44 @@ export function SobrePage() {
             <div className="sobre-row">
               <span className="sobre-row__label">Estado global</span>
               <span className="sobre-row__value">Zustand</span>
+            </div>
+          </div>
+
+          <div className="card sobre-card sobre-card--pix">
+            <div className="sobre-pix-header">
+              <div className="sobre-pix-header__icon">
+                <Icon path={mdiQrcode} size={1.1} color="var(--neon-pink)" />
+              </div>
+              <div className="sobre-pix-header__text">
+                <span className="sobre-pix-header__title">
+                  <Icon path={mdiHeart} size={0.7} color="var(--neon-pink)" />
+                  Apoie o projeto
+                </span>
+                <span className="sobre-pix-header__sub">Qualquer valor faz a diferença!</span>
+              </div>
+            </div>
+            <p className="sobre-text">
+              Se o app te ajuda nos treinos, considere fazer uma contribuição via Pix.
+            </p>
+            <div className="sobre-pix">
+              <button
+                className="sobre-pix__reveal"
+                onClick={() => setPixVisible(v => !v)}
+                aria-label={pixVisible ? 'Ocultar chave Pix' : 'Revelar chave Pix'}
+              >
+                <Icon path={pixVisible ? mdiEyeOffOutline : mdiEyeOutline} size={0.8} color="var(--text-mute)" />
+                <span className={`sobre-pix__key${pixVisible ? ' is-visible' : ''}`}>
+                  {pixVisible ? PIX_KEY : '•••• •••• •••• ••••'}
+                </span>
+              </button>
+              {pixVisible && (
+                <button className="sobre-pix__btn" onClick={handleCopyPix}>
+                  <Icon path={copied ? mdiCheck : mdiContentCopy} size={0.85} color={copied ? 'var(--neon-green)' : 'var(--text-dim)'} />
+                  <span style={{ color: copied ? 'var(--neon-green)' : 'var(--text-dim)' }}>
+                    {copied ? 'Copiado!' : 'Copiar'}
+                  </span>
+                </button>
+              )}
             </div>
           </div>
 
