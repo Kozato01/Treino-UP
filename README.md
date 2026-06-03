@@ -214,19 +214,44 @@ src/
 
 ---
 
-## ⚙️ Desenvolvimento
+## 🚀 Getting Started
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/) 18+
+- [Android Studio](https://developer.android.com/studio) com Android SDK instalado
+- JDK 17+ (o Android Studio instala automaticamente)
+
+### Rodar no navegador (web)
+
+```bash
+git clone https://github.com/Kozato01/academia.git
+cd academia
+npm install
+npm run dev       # abre em http://localhost:5173
+```
+
+### Rodar no Android
 
 ```bash
 npm install
-npm run dev           # servidor web local (Vite)
-npm run build         # tsc + build de produção → dist/
-npm run typecheck     # verificar tipos sem emitir
-npm run preview       # preview do build local
+npm run build           # gera dist/
+npx cap sync android    # copia bundle + instala plugins nativos
+npx cap open android    # abre o Android Studio
+```
 
-# Android (após build)
-npx cap sync android  # sync de plugins + bundle
-npx cap copy android  # apenas copiar bundle (mais rápido)
-npx cap open android  # abre o Android Studio
+No Android Studio: selecione o dispositivo/emulador e clique em **Run ▶**.
+
+> **Nota:** `android/local.properties` (caminho do SDK) é gerado automaticamente pelo Android Studio na primeira abertura — não precisa criar manualmente.
+
+---
+
+## ⚙️ Outros comandos úteis
+
+```bash
+npm run typecheck     # verificar tipos sem emitir
+npm run preview       # preview do build de produção local
+npx cap copy android  # apenas copia o bundle (sem reinstalar plugins — mais rápido)
 ```
 
 ---
